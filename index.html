@@ -31,7 +31,8 @@ ref:&nbsp;&lt;<a href="http://docs.opencv.org/modules/imgproc/doc/geometric_tran
 &nbsp;&nbsp;&nbsp;&nbsp;cv2.destroyAllWindows()<br>
 &nbsp;<br>
 ##&nbsp;Generate&nbsp;a&nbsp;blank&nbsp;image<br>
-&nbsp;&nbsp;&nbsp;&nbsp;img&nbsp;=&nbsp;np.zeros((512,512,3),&nbsp;np.uint8)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;size&nbsp;=&nbsp;(height,&nbsp;width,&nbsp;channels)&nbsp;=&nbsp;(512,&nbsp;256,&nbsp;3)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;img&nbsp;=&nbsp;np.zeros(size,&nbsp;np.uint8)<br>
 &nbsp;<br>
 ##&nbsp;Sort&nbsp;points<br>
 &nbsp;&nbsp;&nbsp;&nbsp;pts&nbsp;=&nbsp;[(0,&nbsp;7),&nbsp;(3,&nbsp;5),&nbsp;(2,&nbsp;6)]<br>
@@ -81,7 +82,10 @@ Returns:<br>
 Raises:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;IOError:&nbsp;when&nbsp;file&nbsp;read&nbsp;error</tt></dd></dl>
  <dl><dt><a name="-find_sift"><strong>find_sift</strong></a>(im_source, im_search, min_match_count<font color="#909090">=10</font>)</dt><dd><tt>SIFT特征点匹配</tt></dd></dl>
- <dl><dt><a name="-imread"><strong>imread</strong></a>(filename)</dt><dd><tt>make&nbsp;sure&nbsp;filename&nbsp;exists</tt></dd></dl>
+ <dl><dt><a name="-find_template"><strong>find_template</strong></a>(im_source, im_search, threshold<font color="#909090">=0.5</font>, rgb<font color="#909090">=False</font>, bgremove<font color="#909090">=False</font>)</dt><dd><tt>@return&nbsp;find&nbsp;location<br>
+if&nbsp;not&nbsp;found;&nbsp;return&nbsp;None</tt></dd></dl>
+ <dl><dt><a name="-imread"><strong>imread</strong></a>(filename)</dt><dd><tt>Like&nbsp;cv2.imread<br>
+This&nbsp;function&nbsp;will&nbsp;make&nbsp;sure&nbsp;filename&nbsp;exists</tt></dd></dl>
  <dl><dt><a name="-main"><strong>main</strong></a>()</dt></dl>
  <dl><dt><a name="-mark_point"><strong>mark_point</strong></a>(img, (x, y))</dt><dd><tt>调试用的:&nbsp;标记一个点</tt></dd></dl>
  <dl><dt><a name="-show"><strong>show</strong></a>(img)</dt><dd><tt>显示一个图片</tt></dd></dl>
@@ -97,6 +101,6 @@ Raises:<br>
 <strong>FLANN_INDEX_KDTREE</strong> = 0<br>
 <strong>__project_url__</strong> = 'https://github.com/netease/aircv'<br>
 <strong>__version__</strong> = '1.01'<br>
-<strong>flann</strong> = &lt;FlannBasedMatcher 0x1456a70&gt;<br>
-<strong>sift</strong> = &lt;SIFT 0x1456a50&gt;</td></tr></table>
+<strong>flann</strong> = &lt;FlannBasedMatcher 0x11ada70&gt;<br>
+<strong>sift</strong> = &lt;SIFT 0x11ada50&gt;</td></tr></table>
 </body></html>
